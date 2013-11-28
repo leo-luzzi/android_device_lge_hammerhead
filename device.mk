@@ -185,6 +185,9 @@ PRODUCT_PACKAGES += \
     lights.hammerhead
 
 PRODUCT_PACKAGES += \
+    OmniTorch	
+
+PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 # Filesystem management tools

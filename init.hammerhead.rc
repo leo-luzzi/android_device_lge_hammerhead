@@ -218,6 +218,10 @@ on post-fs-data
     chmod 664 /sys/devices/system/cpu/cpu2/online
     chmod 664 /sys/devices/system/cpu/cpu3/online
     write /dev/cpuctl/apps/cpu.notify_on_migrate 1
+	
+	# OmniTorch (refs from CyanoGenMod, commit acaf31dc0ba73ae75fab04bf7e0c1f70815e29a7)
+	chown system camera /sys/class/leds/led:flash_torch/brightness
+	chmod 0660 /sys/class/leds/led:flash_torch/brightness
 
 on charger
     # Booting modem
